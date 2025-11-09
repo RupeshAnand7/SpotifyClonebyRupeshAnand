@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Speaker body -->
+    <polygon points="12,18 20,18 28,12 28,36 20,30 12,30"/>
+    <!-- Mute cross -->
+    <line x1="32" y1="18" x2="40" y2="30"/>
+    <line x1="40" y1="18" x2="32" y2="30"/>
+  </g>
+</svg>

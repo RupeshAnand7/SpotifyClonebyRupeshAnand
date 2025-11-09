@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Vertical line -->
+    <line x1="36" y1="12" x2="36" y2="36"/>
+    <!-- Triangle outline only (flipped to face right) -->
+    <polygon points="12,12 28,24 12,36"/>
+  </g>
+</svg>

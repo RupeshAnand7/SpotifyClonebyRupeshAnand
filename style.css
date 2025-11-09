@@ -1,0 +1,689 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+80s+Fade&display=swap');
+
+ *::-webkit-scrollbar {
+     width: 0px;
+     height: 0px;
+ }
+
+ *::-webkit-scrollbar-track {
+     background: transparent;
+ }
+
+ *::-webkit-scrollbar-thumb {
+     background-color: #1ED760;
+     cursor: pointer;
+     border-radius: 100px;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .nav {
+     background-color: rgb(0, 0, 0);
+     height: 7vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     padding-left: 30px;
+ }
+
+ .leftnavbuttons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+ }
+
+ .logo {
+     width: 35px;
+ }
+
+ .hamburger {
+     width: 50px;
+ }
+
+ .rightnavbuttons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .login {
+     cursor: pointer;
+     transition: 0.2s;
+     background-color: white;
+     width: 100px;
+     height: 50px;
+     border-radius: 30px;
+     font-weight: 800;
+ }
+
+ .signup {
+     cursor: pointer;
+     transition: 0.2s;
+     background-color: black;
+     color: #a9a9a9;
+     border: none;
+     margin-right: 10px;
+     border-radius: 30px;
+     font-weight: 700;
+ }
+
+ .signup:hover {
+     transform: scale(1.02);
+     color: white;
+ }
+
+ .login:hover {
+     transform: scale(1.02);
+     background-color: #f0f0f0;
+ }
+
+ .mainbox {
+     position: fixed;
+     top: 8vh;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: rgb(0, 0, 0);
+     width: 99.5vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+ }
+
+ .left {
+     transition: 0.4s;
+     width: 25vw;
+     height: 60vh;
+     transform: translateX(-1000px);
+     padding: 10px;
+     position: fixed;
+     padding: 20px;
+     top: 20vh;
+     left: -4px;
+     border-radius: 25px;
+     overflow-y: auto;
+     overflow-x: hidden;
+     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+         linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+     backdrop-filter: blur(4px);
+ }
+
+ .playlistheading {
+     font-family: "Montserrat", sans-serif;
+     font-size: 28px;
+     color: white;
+     font-weight: 600;
+     height: auto;
+     margin-bottom: 10px;
+ }
+
+ .playlistcontainer {
+     color: white;
+     width: 100%;
+     display: flex;
+     padding-right: 25px;
+     flex-wrap: wrap;
+     gap: 5px;
+     overflow-x: auto;
+     padding-bottom: 100px;
+ }
+
+ .musictile {
+     cursor: pointer;
+     padding: 0px 10px;
+     box-sizing: border-box;
+     width: 100%;
+     height: 60px;
+     border: 2px solid #a9a9a9;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-family: "Montserrat", sans-serif;
+     font-size: 14px;
+
+ }
+
+ .lsomt {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     ;
+     gap: 15px;
+ }
+
+ .music {
+     width: 25px;
+ }
+
+ .musictextcontainer {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .mtsongname {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 600;
+     font-size: 12px;
+ }
+
+ .mtauthor {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
+     font-size: 10px;
+     color: #a9a9a9;
+ }
+
+ .rsomt {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .playnow {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500;
+ }
+
+ .mtplay {
+     width: 30px;
+ }
+
+ .right {
+     border-radius: 0px;
+     box-sizing: border-box;
+     background-color: #121212;
+     width: 100%;
+     height: 110%;
+     overflow-y: auto;
+     display: flex;
+     flex-direction: column;
+     padding: 30px;
+     gap: 5px;
+     margin-top: 100px;
+ }
+
+ .albumsheading {
+     font-family: "Montserrat", sans-serif;
+     font-size: 28px;
+     color: white;
+     font-weight: 600;
+     margin-bottom: 40px;
+ }
+
+ .albumscontainer {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     padding-bottom: 400px;
+     overflow-y: auto;
+ }
+
+ .card {
+     cursor: pointer;
+     transition: 0.3s;
+     border-radius: 10px;
+     box-sizing: border-box;
+     padding: 7px;
+     height: auto;
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .cardimage {
+     border-radius: 7px;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .cardheading {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 600;
+     color: white;
+
+ }
+
+ .carddescription {
+     font-size: 14px;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500;
+     color: #a9a9a9;
+ }
+
+ .card:hover {
+     background-color: #1f1f1f;
+ }
+
+ .playbarcontainer {
+     position: fixed;
+     bottom: -2px;
+     left: 0px;
+     right: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     gap: 5px;
+     padding: 15px;
+     background:
+         linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+     backdrop-filter: blur(5px);
+ }
+
+ .titleandduration {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .playcontrols {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .playbutton,
+ .previousbutton,
+ .nextbutton,
+ .soundbutton {
+     width: 30px;
+ }
+
+ .durationbox {
+     font-family: "Montserrat", sans-serif;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .audiotitle {
+     color: white;
+     font-weight: 800;
+     font-family: "Montserrat", sans-serif;
+     width: 100%;
+ }
+
+ .playcontrolsseekanddurationcontainer {
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ .subboxofvolume {
+     width: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+     position: relative;
+ }
+
+ .soundseek {
+     background-color: white;
+     width: 70px;
+     height: 3px;
+     position: relative;
+     cursor: pointer;
+ }
+
+ .soundprogress {
+     height: 100%;
+     width: 100%;
+     background-color: #1ED760;
+     position: absolute;
+     transition: 0.3s;
+ }
+
+ .soundplayhead {
+     width: 15px;
+     height: 15px;
+     border-radius: 30px;
+     background-color: #1ED760;
+     position: absolute;
+     top: -6px;
+     transition: 0.3s;
+     left: 100%;
+
+ }
+
+ .soundlevel {
+     width: 35px;
+     margin-left: 30px;
+     color: white;
+     font-family: "Roboto", sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .seek {
+     background-color: white;
+     height: 3px;
+     width: 80%;
+     position: relative;
+     cursor: pointer;
+ }
+
+ .progressed {
+     height: 100%;
+     background-color: #1ED760;
+     position: absolute;
+     transition: 0.3s;
+ }
+
+ .playhead {
+     transition: 0.3s;
+     width: 15px;
+     height: 15px;
+     border-radius: 30px;
+     background-color: #1ED760;
+     position: absolute;
+     top: -6px;
+ }
+
+ .lefthamburgerclicked {
+     transform: translateX(0px);
+
+ }
+
+ .playcontrolsandvolumebox {
+     display: flex;
+ }
+
+ @media screen and (max-width:1300px) {
+     .mtsongname {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+     }
+
+     .mtauthor {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 500;
+         font-size: 11px;
+         color: #a9a9a9;
+     }
+
+     .music {
+         width: 15px;
+     }
+
+     .playnow {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 500;
+         font-size: 10px;
+     }
+
+     .mtplay {
+         width: 25px;
+     }
+
+     .card {
+         cursor: pointer;
+         transition: 0.3s;
+         border-radius: 7px;
+         box-sizing: border-box;
+         padding: 7px;
+         height: auto;
+         width: 400px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .cardheading {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+     }
+
+     .carddescription {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 500;
+         color: #a9a9a9;
+         font-size: 10px;
+     }
+
+     .playbutton,
+     .previousbutton,
+     .nextbutton,
+     .soundbutton {
+         width: 25px;
+     }
+
+     .durationbox {
+         font-family: "Montserrat", sans-serif;
+         color: white;
+         font-size: 14px;
+         font-weight: 600;
+     }
+
+     .audiotitle {
+         color: white;
+         font-weight: 700;
+         font-family: "Montserrat", sans-serif;
+         width: 100%;
+         font-size: 14px;
+     }
+
+ }
+
+ @media screen and (max-width:1200px) {
+     .nav {
+         background-color: rgb(0, 0, 0);
+         height: 7vh;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 30px;
+
+     }
+
+     .left {
+         width: 40vw;
+     }
+
+     .left {
+         top: 20vh;
+     }
+
+     .mtsongname {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 600;
+         font-size: 11px;
+     }
+
+     .mtauthor {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 400;
+         font-size: 10px;
+         color: #a9a9a9;
+     }
+
+     .music {
+         width: 15px;
+     }
+
+     .playnow {
+         font-family: "Montserrat", sans-serif;
+         font-weight: 500;
+         font-size: 0px;
+     }
+
+     .mtplay {
+         width: 25px;
+     }
+
+     .nav {
+         height: 0vh;
+     }
+
+     .leftnavbuttons {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+     }
+
+     .hamburger {
+         width: 30px;
+     }
+
+     .logo {
+         width: 20px;
+     }
+
+     .login {
+         cursor: pointer;
+         transition: 0.2s;
+         background-color: white;
+         width: 50px;
+         height: 25px;
+         border-radius: 30px;
+         font-weight: 700;
+         font-size: 10px;
+     }
+
+     .signup {
+         cursor: pointer;
+         transition: 0.2s;
+         background-color: black;
+         color: #a9a9a9;
+         border: none;
+         margin-right: 10px;
+         border-radius: 30px;
+         font-weight: 700;
+         font-size: 10px;
+     }
+ }
+
+ @media screen and (max-width:900px) {
+     .card {
+         width: 300px;
+     }
+
+ }
+
+ @media screen and (max-width:700px) {
+     .left {
+         width: 50vw;
+     }
+
+     .albumsheading {
+         font-family: "Montserrat", sans-serif;
+         font-size: 16px;
+         color: white;
+         font-weight: 600;
+     }
+
+     .playlistheading {
+         font-family: "Montserrat", sans-serif;
+         font-size: 16px;
+         color: white;
+         font-weight: 600;
+         height: auto;
+         margin-bottom: 10px;
+     }
+
+     .card {
+         cursor: pointer;
+         transition: 0.3s;
+         border-radius: 7px;
+         box-sizing: border-box;
+         padding: 7px;
+         height: auto;
+         width: 200px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .albumscontainer {
+         color: white;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         flex-wrap: wrap;
+     }
+ }
+
+ @media screen and (max-width:500px) {
+     *::-webkit-scrollbar {
+         width: 0px;
+         height: 0px;
+     }
+
+     .left {
+         width: 70vw;
+         height: 60vh;
+         top: 20vh;
+
+     }
+
+     .card {
+         width: 3500px;
+     }
+
+     .playcontrolsandvolumebox {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .playcontrolsandvolumebox {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+     }
+
+     .playcontrolsseekanddurationcontainer {
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+     }
+
+     .audiotitle {
+         font-size: 10px;
+     }
+
+     .soundlevel {
+         margin-left: 15px;
+         margin-right: -70px;
+         font-size: 10px;
+     }
+
+     .seek {
+         width: 100%;
+     }
+
+     .durationbox {
+         font-size: 10px;
+     }
+ }
