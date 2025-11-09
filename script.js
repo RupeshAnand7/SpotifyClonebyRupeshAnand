@@ -16,7 +16,6 @@ const ALBUM_DATA = {
     ],
     "songs/Bhakti Songs ddd Description Radhe Radhe sss/": [
         "songs/Bhakti Songs ddd Description Radhe Radhe sss/Braj ko tore-Priya Gulati.mp3",
-        "songs/Bhakti Songs ddd Description Radhe Radhe sss/Main Haara-Jainen Paras Chhabra.mp3",
         "songs/Bhakti Songs ddd Description Radhe Radhe sss/Shyama Aan Baso Vrindavan Me-Larissa Almeida.mp3",
         "songs/Bhakti Songs ddd Description Radhe Radhe sss/Suno Krishna Pyaare-Swati Mishra.mp3"
     ],
@@ -31,8 +30,6 @@ const ALBUM_DATA = {
     "songs/Bollywood ddd Description How about Bollywood! sss/": [
         "songs/Bollywood ddd Description How about Bollywood! sss/Into You-Hiten.mp3",
         "songs/Bollywood ddd Description How about Bollywood! sss/Made in India-Guru Randhawa.mp3",
-        "songs/Bollywood ddd Description How about Bollywood! sss/Saiyaara-Tanishk Bagchi.mp3",
-        "songs/Bollywood ddd Description How about Bollywood! sss/Saiyaara-Kishor Kumar.mp3",
         "songs/Bollywood ddd Description How about Bollywood! sss/SIRRA-Guru Randhawa.mp3"
     ],
     "songs/English Songs ddd Description Listen to some English Songs sss/": [
