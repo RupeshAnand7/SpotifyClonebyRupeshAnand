@@ -13,3 +13,4 @@ All the above functions can be performed by mouse click also.
 Click on an album to start playing the first song of that album. 
 The playlist button beside Spotify logo is for accessing playlist, you can toggle it to make playlist appear and disappear, playlist contains songs present in selected album. Click on any song in playlist and it plays.
 When a song ends, provided that it was not the last song, then the next song of same playlist starts playing.
+Scroll bar is hidden, I did that on purpose for cleaner looks, but if due to any reason your mouse scroll wheel is not working, then click F!2, then click the button which is to the left of elements tab, now you can scroll using mouse left click button, like touch screen.
